@@ -227,7 +227,7 @@ docker run -dit \
     --name $CONTAINER_NAME \
     --hostname jd_v4_bot \
     --restart always \
-	-p 5679:5678 \
+    -p 5679:5678 \
     --network $NETWORK \
     $ENABLE_HANGUP_ENV \
     $ENABLE_BOT_ENV \
@@ -243,8 +243,9 @@ if [ $INSTALL_WATCH = true ]; then
     --name watchtower \
     --restart always \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower \
-    --cleanup
+    containrrr/watchtower -c\
+    --schedule "13,14,15 3 * * * *" \
+    jd_v4_bot jd_script
 fi
 
 #检查config文件是否存在
