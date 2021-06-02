@@ -244,7 +244,7 @@ if [ $INSTALL_WATCH = true ]; then
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower -c\
     --schedule "13,14,15 3 * * * *" \
-    
+    $container_name
 fi
 
 #检查config文件是否存在
