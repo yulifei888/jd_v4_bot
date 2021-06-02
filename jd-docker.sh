@@ -32,7 +32,7 @@ EXT_SCRIPT=true
 PULL_IMAGE=true
 HAS_CONTAINER=false
 DEL_CONTAINER=true
-INSTALL_WATCH=true
+INSTALL_WATCH=false
 TEST_BEAN_CHAGE=false
 ENABLE_TTYD=true
 ENABLE_WEB_PANEL=true
@@ -148,11 +148,11 @@ input_container_name
 
 
 #是否安装WatchTower
-inp "5.是否安装containrrr/watchtower自动更新Docker容器：\n1) 安装[默认]\n2) 不安装"
+inp "5.是否安装containrrr/watchtower自动更新Docker容器：\n1) 安装\n2) 不安装[默认]"
 echo -n -e "\e[33m输入您的选择->\e[0m"
 read watchtower
-if [ "$watchtower" = "2" ]; then
-    INSTALL_WATCH=false
+if [ "$watchtower" = "1" ]; then
+    INSTALL_WATCH=true
 fi
 
 inp "请选择容器的网络类型：\n1) host[默认]\n2) bridge"
@@ -244,7 +244,7 @@ if [ $INSTALL_WATCH = true ]; then
     -v /var/run/docker.sock:/var/run/docker.sock \
     containrrr/watchtower -c\
     --schedule "13,14,15 3 * * * *" \
-    $container_name
+    
 fi
 
 #检查config文件是否存在
