@@ -14,3 +14,4 @@
 3、wget -q https://raw.githubusercontent.com/Anylines/jd_v4_bot/main/v4mb.sh -O v4mb.sh && chmod +x v4mb.sh && ./v4mb.sh
    
    #面板开机不会自启动，请在配置中配置EnableJupDiyShell="true" 可以随更新脚本一起启动
+   #如需面板开机自启动，进入容器后 vi /etc/cont-init.d/20-jup 最后加一行 pm2 start /jd/panel/server.js
