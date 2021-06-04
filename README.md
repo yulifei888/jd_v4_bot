@@ -2,7 +2,7 @@
 
 1、wget -q https://raw.githubusercontent.com/Anylines/jd_v4_bot/main/jd-docker.sh -O jd-docker.sh && chmod +x jd-docker.sh && ./jd-docker.sh
    
-   #如果无法拉到V4镜像，请移步百度云下载到服务器，然后docker load -r nevinee_jd_v4-bot_arm.tar（或nevinee_jd_v4-bot_amd64.tar）加载镜像
+   #如果无法拉到V4镜像，请移步百度云下载到服务器，然后docker load -i nevinee_jd_v4-bot_arm.tar（或nevinee_jd_v4-bot_amd64.tar）加载镜像
     百度云地址：https://pan.baidu.com/s/1Q4qFEodM47Ss6hGQ8bXJQA 提取码：4321 
 
 
