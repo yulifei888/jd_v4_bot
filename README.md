@@ -16,6 +16,6 @@
     wget -q https://raw.githubusercontent.com/Anylines/jd_v4_bot/main/v4mb.sh -O v4mb.sh && chmod +x v4mb.sh && ./v4mb.sh
     
 
-3.1、重装装面板执行以下命令后，请使用旧密码进行访问面板。
+3.1、更新或者重装装面板执行以下命令后，请使用旧密码进行访问面板。
 
-    wget -q https://raw.githubusercontent.com/Anylines/jd_v4_bot/main/v4mb_old.sh -O v4mb_old.sh && chmod +x v4mb_old.sh && ./v4mb_old.sh
+    wget -q https://raw.githubusercontent.com/Anylines/jd_v4_bot/main/v4mb_up.sh -O v4mb_up.sh && chmod +x v4mb_up.sh && ./v4mb_up.sh
