@@ -11,6 +11,11 @@
     docker exec -it jd_v4_bot bash 
     
  
-3、请访问5678端口进行配置，如果你做了映射，请使用实际映射的端口进行访问，默认用户名admin，密码adminadmin。
+3、新装面板执行以下命令后，请访问5678端口进行配置，如果你做了映射，请使用实际映射的端口进行访问，默认用户名admin，密码adminadmin。
  
     wget -q https://raw.githubusercontent.com/Anylines/jd_v4_bot/main/v4mb.sh -O v4mb.sh && chmod +x v4mb.sh && ./v4mb.sh
+    
+
+3.1、重装装面板执行以下命令后，请使用旧密码进行访问面板。
+
+    wget -q https://raw.githubusercontent.com/Anylines/jd_v4_bot/main/v4mb_old.sh -O v4mb_old.sh && chmod +x v4mb_old.sh && ./v4mb_old.sh
