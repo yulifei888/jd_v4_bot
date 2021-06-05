@@ -7,7 +7,7 @@ cp v4mb/20-jup /etc/cont-init.d/20-jup
 cp v4mb/jshare.sh /jd/jshare.sh
 cp v4mb/config/diy.sh config/diy.sh
 cp v4mb/config/auth.json config/auth.json
-rm -rf v4mb
+rm -rf v4mb/
 cd panel
 pm2 start server.js
 ln -s /jd/config/v4mb/25-server /etc/cont-init.d/25-server
