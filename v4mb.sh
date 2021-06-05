@@ -10,5 +10,5 @@ mv v4mb/config/auth.json config/auth.json
 rm -rf v4mb
 cd panel
 pm2 start server.js
-echo -e "默认http端口号为5678，如果你做了映射，请使用实际映射的端口进行访问。
+echo -e "请访问 http://<ip>:5678，如果你做了映射，请使用实际映射的端口进行访问。
 默认用户名admin，密码adminadmin。
