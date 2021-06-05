@@ -16,3 +16,5 @@
    #面板开机不会自启动，请在配置中配置EnableJupDiyShell="true" 可以随更新脚本jup一起启动
    
    #如需面板开机自启动，进入容器后 vi /etc/cont-init.d/20-jup 加一行 pm2 start /jd/panel/server.js
+   
+   #如需解除12个账户限制，进入容器后 vi jshare.sh 找到 3 * 4 改大点即可
