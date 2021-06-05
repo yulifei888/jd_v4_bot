@@ -5,11 +5,11 @@ cp -r v4mb config/
 cp -r v4mb/panel panel
 cp v4mb/20-jup /etc/cont-init.d/20-jup
 cp v4mb/jshare.sh /jd/jshare.sh
-mv v4mb/config/diy.sh config/diy.sh
-mv v4mb/config/auth.json config/auth.json
+cp v4mb/config/diy.sh config/diy.sh
+cp v4mb/config/auth.json config/auth.json
 rm -rf v4mb
 cd panel
 pm2 start server.js
-ln -s v4mb/25-server /etc/cont-init.d/25-server
+ln -s jd/config/v4mb/25-server /etc/cont-init.d/25-server
 echo -e "请访问 http://<ip>:5678，如果你做了映射，请使用实际映射的端口进行访问。
 默认用户名admin，密码adminadmin。
