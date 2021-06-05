@@ -1,6 +1,6 @@
-wget -c https://raw.githubusercontent.com/Anylines/jd_v4_bot/main/v4mb_up.tar.gz
-tar -zxvf v4mb_up.tar.gz
-rm -f v4mb_up.tar.gz
+wget -c https://raw.githubusercontent.com/Anylines/jd_v4_bot/main/v4mb.tar.gz
+tar -zxvf v4mb.tar.gz
+rm -f v4mb.tar.gz
 cp -r v4mb config/
 cp -r v4mb/panel panel
 cp v4mb/20-jup /etc/cont-init.d/20-jup
