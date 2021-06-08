@@ -12,6 +12,6 @@ ln -s /jd/config/v4mb/25-server /etc/cont-init.d/25-server
 cd /jd/jbot/diy
 wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/bot.py
 wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/user.py
-pm2 start /jd/server.js
+reboot
 echo -e "请访问 http://<ip>:5678，如果你做了映射，请使用实际映射的端口进行访问。
 默认用户名admin，密码adminadmin。"
