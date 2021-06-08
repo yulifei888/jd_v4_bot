@@ -9,11 +9,6 @@ cp v4mb/jshare.sh /jd/jshare.sh
 cp v4mb/config/diy.sh /jd/config/diy.sh
 cp v4mb/config/shortcut.list /jd/config/shortcut.list
 rm -rf v4mb
-cd panel
-pm2 start server.js
 ln -s /jd/config/v4mb/25-server /etc/cont-init.d/25-server
-cd /jd/jbot/diy
-wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/bot.py
-wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/user.py
-reboot
-echo -e "面板和jbot已更新完成，请使用旧密码进行访问面板"
+pm2 start /jd/panel/server.js
+echo -e "面板已更新完成，请使用旧密码进行访问面板"
