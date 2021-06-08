@@ -5,9 +5,7 @@ cp -r v4mb config/
 cp -r v4mb/panel panel
 cp v4mb/20-jup /etc/cont-init.d/20-jup
 cp v4mb/jshare.sh /jd/jshare.sh
-cp v4mb/config/diy.sh config/diy.sh
-cp v4mb/config/auth.json config/auth.json
-cp v4mb/config/shortcut.list config/shortcut.list
+cp -r v4mb/config /jd
 rm -rf v4mb
 cd panel
 pm2 start server.js
