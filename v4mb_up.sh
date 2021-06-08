@@ -13,5 +13,5 @@ ln -s /jd/config/v4mb/25-server /etc/cont-init.d/25-server
 wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/bot.py  /jd/jbot/diy/bot.py
 wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/user.py  /jd/jbot/diy/user.py
 pm2 stop jbot
-pm3 start jbot
+pm2 start jbot
 echo -e "面板和jbot已更新完成，请使用旧密码进行访问面板"
