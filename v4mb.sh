@@ -11,8 +11,8 @@ rm -rf v4mb
 cd panel
 pm2 start server.js
 ln -s /jd/config/v4mb/25-server /etc/cont-init.d/25-server
-wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/bot.py  /jd/jbot/diy/bot.py
-wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/user.py  /jd/jbot/diy/user.py
+wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/bot.py /jd/jbot/diy/bot.py
+wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/user.py /jd/jbot/diy/user.py
 pm2 stop jbot
 pm2 start jbot
 echo -e "请访问 http://<ip>:5678，如果你做了映射，请使用实际映射的端口进行访问。
