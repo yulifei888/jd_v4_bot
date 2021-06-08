@@ -10,4 +10,7 @@ rm -rf v4mb
 cd panel
 pm2 start server.js
 ln -s /jd/config/v4mb/25-server /etc/cont-init.d/25-server
-echo -e "面板已更新完成，请使用旧密码进行访问面板"
+wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/bot.py /jd/config/bot.py
+wget -c https://raw.githubusercontent.com/chiupam/JD_Diy/main/jbot/user.py /jd/config/user.py
+pm2 restart jbot
+echo -e "面板和jbot已更新完成，请使用旧密码进行访问面板"
