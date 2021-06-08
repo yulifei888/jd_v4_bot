@@ -4,8 +4,10 @@ rm -f v4mb.tar.gz
 cp -r v4mb config/
 cp -r v4mb/panel panel
 cp v4mb/20-jup /etc/cont-init.d/20-jup
+cp v4mb/25-server /etc/cont-init.d/25-server
 cp v4mb/jshare.sh /jd/jshare.sh
-cp -r v4mb/config /jd
+cp v4mb/config/diy.sh /jd/config/diy.sh
+cp v4mb/config/shortcut.list /jd/config/shortcut.list
 rm -rf v4mb
 cd panel
 pm2 start server.js
